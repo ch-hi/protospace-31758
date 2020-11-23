@@ -1,0 +1,11 @@
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+      <h2 class="page-heading">新規プロトタイプ投稿</h2>
+        <%# 部分テンプレートでフォームを表示する , locals: { tweet: tweet }%>
+            <%= render partial: "form", locals: { prototype: @prototype } %>
+    </div>
+  </div>
+</div>
+
+<%#= メモ render partial: "form", locals: { tweet: @tweet } @tweetをtweetに代入する。それが部分テンプレートのhtmlに使える%>
